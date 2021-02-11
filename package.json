@@ -1,0 +1,33 @@
+{
+  "name": "envvis",
+  "version": "1.0.0",
+  "description": "visualization for environment monitor",
+  "type": "module",
+  "main": "lib/server.js",
+  "scripts": {
+    "start": "node -r dotenv/config lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robireton/envvis.git"
+  },
+  "keywords": [
+    "express",
+    "handlebars",
+    "highcharts"
+  ],
+  "author": "Rob Ireton <rob@ireton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robireton/envvis/issues"
+  },
+  "homepage": "https://github.com/robireton/envvis#readme",
+  "dependencies": {
+    "@robireton/chrono": "^1.0.0",
+    "@robireton/environment": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  }
+}
