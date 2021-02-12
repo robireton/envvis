@@ -5,6 +5,7 @@ function chartCO2 () {
   const url = new URL(document.getElementById('containerCO2').dataset.source)
   const search = new URLSearchParams()
   search.append('hours', '1.5')
+  search.append('average', '1')
   url.search = search.toString()
 
   Highcharts.chart('containerCO2', {
@@ -66,6 +67,7 @@ function chartTemp () {
   const url = new URL(document.getElementById('containerTemp').dataset.source)
   const search = new URLSearchParams()
   search.append('hours', '1.5')
+  search.append('average', '1')
   url.search = search.toString()
 
   Highcharts.chart('containerTemp', {
