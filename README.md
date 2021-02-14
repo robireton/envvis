@@ -1,4 +1,4 @@
-# Environmental Visualization · [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# Environment Visualization · [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 visualization for environmental data using Highcharts
 

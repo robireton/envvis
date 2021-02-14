@@ -1,5 +1,5 @@
 [Unit]
-Description=Visualize Environment
+Description=Environment Visualization
 After=network.target
 
 [Service]
