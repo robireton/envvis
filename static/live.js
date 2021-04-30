@@ -128,7 +128,9 @@ function chartTemp () {
 window.addEventListener('DOMContentLoaded', _event => {
   Highcharts.setOptions({
     time: {
-      timezoneOffset: 300 // EST is -05:00
+      // timezoneOffset: 300 // EST is -05:00
+      // timezoneOffset: 240 // EDT is -04:00
+      timezoneOffset: (new Date()).getTimezoneOffset()
     }
   })
   chartCO2()

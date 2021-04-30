@@ -18,7 +18,8 @@ async function chartCO2 () {
       },
       subtitle: {
         text: document.ontouchstart === undefined
-          ? 'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+          ? 'Click and drag in the plot area to zoom in'
+          : 'Pinch the chart to zoom in'
       },
       xAxis: {
         type: 'datetime'
@@ -88,7 +89,8 @@ async function chartTemp () {
       },
       subtitle: {
         text: document.ontouchstart === undefined
-          ? 'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+          ? 'Click and drag in the plot area to zoom in'
+          : 'Pinch the chart to zoom in'
       },
       xAxis: {
         type: 'datetime'
@@ -143,7 +145,9 @@ async function chartTemp () {
 window.addEventListener('DOMContentLoaded', async _event => {
   Highcharts.setOptions({
     time: {
-      timezoneOffset: 300 // EST is -05:00
+      // timezoneOffset: 300 // EST is -05:00
+      // timezoneOffset: 240 // EDT is -04:00
+      timezoneOffset: (new Date()).getTimezoneOffset()
     }
   })
   chartCO2()
