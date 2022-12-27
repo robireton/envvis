@@ -1,6 +1,6 @@
 {
   "name": "envvis",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "visualization for environment monitor",
   "type": "module",
   "engines": {
@@ -27,10 +27,12 @@
   },
   "homepage": "https://github.com/robireton/envvis#readme",
   "dependencies": {
-    "@robireton/chrono": "^1.0.0",
-    "@robireton/environment": "^2.1.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
+    "@robireton/chrono": "^1.0.1",
+    "@robireton/environment": "^3.0.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "dotenv": "latest"
   }
 }
